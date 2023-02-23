@@ -7,16 +7,16 @@ import Skills from "./component/Skills";
 import Work from "./component/Work";
 
 function App() {
-	return (
-		<div>
-			<Navbar />
-			<Hero />
-			<About />
-			<Skills />
-			<Work />
-			<Contact />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Work />
+      <Contact />
+    </div>
+  );
 }
 
 export default App;
