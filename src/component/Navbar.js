@@ -152,6 +152,7 @@ function Navbar() {
             <a
               className="flex justify-between items-center w-full text-gray-200"
               href="https://docs.google.com/document/d/1L8hrq0V8ymbPr2xs2gw5NBNvOjPLSZ8P/edit?usp=sharing&ouid=113887069856856175037&rtpof=true&sd=true"
+              target="_blank"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
