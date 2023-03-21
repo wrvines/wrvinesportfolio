@@ -21,27 +21,27 @@ function Navbar() {
 
       <ul className=" hidden md:flex">
         <li>
-          <Link to="home" smooth={true} offset={80} duration={500}>
+          <Link to="home" smooth={true} offset={30} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} offset={80} duration={500}>
+          <Link to="about" smooth={true} offset={70} duration={500}>
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} offset={80} duration={500}>
+          <Link to="skills" smooth={true} offset={-50} duration={500}>
             Skills
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} offset={80} duration={500}>
+          <Link to="work" smooth={true} offset={-150} duration={500}>
             Work
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={80} duration={500}>
+          <Link to="contact" smooth={true} offset={30} duration={500}>
             Contact
           </Link>
         </li>
@@ -151,7 +151,7 @@ function Navbar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-200"
-              href="/"
+              href="https://docs.google.com/document/d/1L8hrq0V8ymbPr2xs2gw5NBNvOjPLSZ8P/edit?usp=sharing&ouid=113887069856856175037&rtpof=true&sd=true"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

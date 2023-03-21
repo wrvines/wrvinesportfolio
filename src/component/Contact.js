@@ -7,56 +7,51 @@ import { TbArrowsUp } from "react-icons/tb";
 import { Link } from "react-scroll";
 
 function Contact() {
-	const Email = process.env.REACT_APP_EMAIL_URL;
+  const Email = process.env.REACT_APP_EMAIL_URL;
 
-	return (
-		<div
-			name="contact"
-			className="w-full lg:h-screen bg-[#363534] text-gray-200">
-			<div className="max-w-[600px] mx-auto px-4 py-16 w-full">
-				<p className="text-4xl font-bold inline border-b-4 border-[#E52424]">
-					Contact
-				</p>
-				<h2 className="py-4 text-[#8892b0]">// Get In Touch</h2>
-				<form
-					method="POST"
-					action={Email}
-					className="flex flex-col max-w-[600px] ww-full text-black">
-					<input
-						className="p-2 "
-						type="text"
-						placeholder="Name"
-						name="name"
-					/>
-					<input
-						className="my-4 p-2 "
-						type="email"
-						placeholder="Email"
-						name="email"
-					/>
-					<textarea
-						className="p-2"
-						name="message"
-						rows="10"
-						placeholder="Message"></textarea>
-					<button className="text-white border-2 hover:bg-[#E52424] hover:border-[#E52424] px-4 py-3 my-8 mx-auto flex items-center">
-						Let's Connect
-					</button>
-				</form>
-				<div className="mx-auto flex justify-center items-center w-[6rem] rounded-full shadow-lg shadow-gray-900 py-4 cursor-pointer hover:scale-110 ease-in duration-300">
-					<Link to="home" smooth={true} duration={500}>
-						<TbArrowsUp size={30} />
-					</Link>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div name="contact" className="w-full pt-16 bg-[#363534] text-gray-200">
+      <div className="max-w-[600px] mx-auto px-4 py-16 w-full">
+        <p className="text-4xl font-bold inline border-b-4 border-[#E52424]">
+          Contact
+        </p>
+        <h2 className="py-4 text-[#8892b0]">// Get In Touch</h2>
+        <form
+          method="POST"
+          action={Email}
+          className="flex flex-col max-w-[600px] w-full text-black"
+        >
+          <input className="p-2 " type="text" placeholder="Name" name="name" />
+          <input
+            className="my-4 p-2 "
+            type="email"
+            placeholder="Email"
+            name="email"
+          />
+          <textarea
+            className="p-2"
+            name="message"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button className="text-white border-2 hover:bg-[#E52424] hover:border-[#E52424] px-4 py-3 my-8 mx-auto flex items-center">
+            Let's Connect
+          </button>
+        </form>
+        <div className="mx-auto flex justify-center items-center w-[6rem] rounded-full shadow-lg shadow-gray-900 py-4 cursor-pointer hover:scale-110 ease-in duration-300">
+          <Link to="home" smooth={true} duration={500}>
+            <TbArrowsUp size={30} />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Contact;
 
 {
-	/* <div className="grid lg:grid-cols-5 gap-8"></div>
+  /* <div className="grid lg:grid-cols-5 gap-8"></div>
 				//  left 
 				<div className="col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-900 rounded-xl p-4">
 					<div className="lg:p-4 h-full">
